@@ -41,9 +41,8 @@ var apiRoutes = express.Router();
 
         //METHODS
 
-
+         //Models
         //Models are defined by passing a Schema instance to mongoose.model
-        //model
         var User = mongoose.model('student', userSchema);
 
 
