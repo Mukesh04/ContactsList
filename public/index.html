@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ContactApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact List</title>
+
+    <style type="text/css">
+        .form-horizontal .control-label{text-align:left!important;display: block;width: 100%;}
+        .form-group{display: flex;}
+    </style>
+
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" crossorigin="anonymous">
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <!--<script src="app.js"></script>-->
+
+    <script src="controllers/mainController.js"></script>
+
+    <script src="controllers/addUser.js"></script>
+
+
+    <script src="controllers/contactList.js"></script>
+
+    <script src="controllers/updateUser.js"></script>
+    <script src="controllers/error.js"></script>
+
+    <script src="services/addUserService.js"></script>
+    <script src="services/userViewService.js"></script>
+
+
+
+
+
+</head>
+<body>
+
+  <div class="container" ng-controller="ContactCtrl" >
+
+      {{ContactCtrl}}
+
+      <h1><a href="#!/view2" style="color:indianred;">Contact Lists</a></h1>
+      <div ng-view></div>
+
+
+      <br><br><br><br>
+
+
+
+  </div>
+</body>
+</html>
